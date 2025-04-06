@@ -18,3 +18,18 @@ document.addEventListener("DOMContentLoaded", () => {
         }
     });
 });
+
+function toggleContent(id) {
+    let content = document.getElementById(id);
+    const allContents = document.querySelectorAll('.conteudo p');
+    
+    // Esconde todos os outros conteúdos
+    allContents.forEach((item) => {
+        if (item !== content) {
+            item.classList.add('hidden');
+        }
+    });
+    
+    // Alterna a visibilidade do conteúdo clicado
+    content.classList.toggle('hidden');
+}

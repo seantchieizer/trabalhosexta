@@ -136,3 +136,192 @@ nav ul li a:hover {
     margin-bottom: 10px;
     border-radius: 5px;
 }
+
+/*CSS da Linha do tempo*/
+
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+.meu_horizontal {
+    display: flex;
+    gap: 32px;
+}
+.meu_horizontal a {
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 300;
+    text-decoration: none;
+}
+.meu_horizontal a span {
+    font-weight: bold;
+}
+
+.teste_1 {
+    display: block;
+    margin: 0 auto;
+    margin-top: 16px;
+    left: 20%;
+}
+
+.textos p{
+    margin: 0 20%;
+    text-align: justify;
+    margin-top: 15px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+.textos h2{
+    margin: 0;
+    text-align: justify;
+    margin-top: 5%;
+    font-size: 30px;
+    color: #0056b3;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+
+
+.imagens h1{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    color: #0056b3;
+    margin-top: 5%;
+}
+
+/* Testanto*/
+
+.container {
+    position: relative;
+    width: 50%;
+    margin: 50px auto;
+}
+.linha {
+    position: absolute;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background-color: black;
+    transform: translateX(-50%);
+}
+.evento {
+    position: relative;
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.marcador {
+    width: 20px;
+    height: 20px;
+    background-color: #0056b3;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+* Testanto*/
+
+.container {
+    position: relative;
+    width: 50%;
+    margin: 50px auto;
+}
+.linha {
+    position: absolute;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background-color: black;
+    transform: translateX(-50%);
+}
+.evento {
+    position: relative;
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Testanto*/
+
+.container {
+    position: relative;
+    width: 50%;
+    margin: 50px auto;
+}
+.linha {
+    position: absolute;
+    left: 50%;
+    width: 4px;
+    height: 100%;
+    background-color: black;
+    transform: translateX(-50%);
+}
+.evento {
+    position: relative;
+    width: 100%;
+    margin: 50px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.marcador {
+    width: 20px;
+    height: 20px;
+    background-color: #0056b3;
+    border-radius: 50%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.conteudo {
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+    background-color: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 40%;
+}
+
+/* Adicionando um efeito de transição suave para a visibilidade */
+.hidden {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.conteudo p {
+    transition: opacity 0.3s ease-in-out;
+}
+
+.container h2{
+    color: #007bff;
+}
+
+.conteudo p:not(.hidden) {
+    opacity: 1;
+}
+
+#conteudo-1990{
+    margin-left: 500px;
+}
+
+#conteudo_direita{
+    margin-left: 60%;
+}
