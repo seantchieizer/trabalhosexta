@@ -1,10 +1,15 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InfoTech | Comunidade</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>Inserção de Novas Vagas</title>
+    <link rel="stylesheet" href="assets/css/stylecomunidade.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     <header>
@@ -21,21 +26,52 @@
             </ul>
         </nav>
     </header>
+  <main class="container">
     <div class="banner-comunidade">
-        <div class="banner-chamada">
-            <h1>Divulgue sua Vaga!</h1>
-            <h2>Vagas de tecnologia na comunidade</h2>
+        <div class="banner-chamada">Bem-vindo à Comunidade de Vagas</div>
+    </div>
+
+    <div class="vagas d-flex ">
+
+        <div class="postar-vaga">
+            <h2>Publicar Nova Vaga</h2>
+            <form id="jobForm">
+                <label for="title">Título da Vaga:
+
+                    <input type="text" id="title" name="title">
+
+                </label>
+
+
+                <label for="description" >Descrição:
+                    <input type="text" id="description" name="description">
+
+                </label>
+
+
+
+                <button type="submit" id="postarVaga">Publicar</button>
+            </form>
         </div>
+
+        <div class="forum">
+            <h2>Pesquisar Vagas</h2>
+            <label for="title">Título da Vaga:
+
+                <input type="text" id="search" placeholder="Pesquisar por título...">
+    
+            </label>
+            <button id="searchButton">Pesquisar</button>
+        </div>
+
     </div>
-
-
-    <div class="postar-vaga">
-        <textarea id="vagaInput" placeholder="Digite a vaga ou oportunidade..."></textarea>
-        <button id="postarVaga">Postar</button>
+    
+   
+    <div class="forum">
+        <h2>Vagas Recentes</h2>
+        <div id="jobs"></div>
     </div>
-
-    <div class="forum" id="forum"></div>
-
+  </main>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
