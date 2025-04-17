@@ -33,3 +33,34 @@ function toggleContent(id) {
     // Alterna a visibilidade do conteúdo clicado
     content.classList.toggle('hidden');
 }
+
+const jobForm = document.getElementById('jobForm');
+const jobsContainer = document.getElementById('jobs');
+const searchInput = document.getElementById('search');
+const searchButton = document.getElementById('searchButton');
+
+jobForm.addEventListener('submit', function(event) {
+    event.preventDefault();
+    const title = document.getElementById('title').value;
+    const description = document.getElementById('description').value;
+
+    const jobDiv = document.createElement('div');
+    jobDiv.classList.add('post');
+    jobDiv.innerHTML = `<h3>${title}</h3><p>${description}</p>`;
+    jobsContainer.appendChild(jobDiv);
+
+    jobForm.reset();
+});
+
+searchButton.addEventListener('click', function() {
+    const searchTerm = searchInput.value.toLowerCase();
+    const jobs = document.querySelectorAll('.post');
+    jobs.forEach(job => {
+        const title = job.querySelector('h3').textContent.toLowerCase();
+        if (title.includes(searchTerm)) {
+            job.style.display = '';
+        } else {
+            job.style.display = 'none';
+        }
+    });
+});

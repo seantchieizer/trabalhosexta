@@ -1,10 +1,82 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InfoTech | Quiz</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="stylesheet" href="assets/css/stylecurso.css">
+  <title>Quiz Tech</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .body-quiz {
+      background: linear-gradient(135deg, #1e1e2f, #282a36);
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .quiz-container {
+      background-color: #2e2f3e;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+      padding: 30px;
+      width: 100%;
+      max-width: 500px;
+      text-align: center;
+    }
+
+    .question {
+      font-size: 1.4em;
+      margin-bottom: 20px;
+    }
+
+    .answers {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+    }
+
+    .btn {
+      background-color: #44475a;
+      border: none;
+      border-radius: 8px;
+      padding: 12px 20px;
+      color: #fff;
+      font-size: 1em;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn:hover {
+      background-color: #6272a4;
+    }
+
+    .btn.correct {
+      background-color: #50fa7b;
+    }
+
+    .btn.wrong {
+      background-color: #ff5555;
+    }
+
+    #next-btn {
+      margin-top: 20px;
+      display: none;
+    }
+
+    .score {
+      font-size: 1.2em;
+      margin-top: 20px;
+    }
+  </style>
 </head>
 <body>
     <header>
@@ -21,5 +93,160 @@
             </ul>
         </nav>
     </header>
+    <div class="body-quiz">
+      <div class="quiz-container">
+        <div class="question" id="question">Carregando...</div>
+        <div class="answers" id="answer-buttons"></div>
+        <button id="next-btn" class="btn">Próxima</button>
+        <div class="score" id="score"></div>
+      </div>
+    
+      <script>
+        const questions = [
+          {
+            question: "Qual linguagem é usada para estilizar páginas web?",
+            answers: [
+              { text: "HTML", correct: false },
+              { text: "JavaScript", correct: false },
+              { text: "CSS", correct: true },
+              { text: "Python", correct: false }
+            ]
+          },
+          {
+            question: "O que significa a sigla CPU?",
+            answers: [
+              { text: "Central Performance Unit", correct: false },
+              { text: "Central Processing Unit", correct: true },
+              { text: "Computer Personal Unit", correct: false },
+              { text: "Central Programming Unit", correct: false }
+            ]
+          },
+          {
+            question: "Qual dessas é uma linguagem de programação?",
+            answers: [
+              { text: "Windows", correct: false },
+              { text: "Linux", correct: false },
+              { text: "Python", correct: true },
+              { text: "Chrome", correct: false }
+            ]
+          },
+          {
+            question: "Qual empresa criou o sistema operacional Android?",
+            answers: [
+              { text: "Apple", correct: false },
+              { text: "Google", correct: true },
+              { text: "Microsoft", correct: false },
+              { text: "Samsung", correct: false }
+            ]
+          },
+          {
+            question: "O que é um 'bug' em programação?",
+            answers: [
+              { text: "Um vírus de computador", correct: false },
+              { text: "Erro no código", correct: true },
+              { text: "Atualização de sistema", correct: false },
+              { text: "Aplicativo novo", correct: false }
+            ]
+          },
+          {
+            question: "Qual dessas linguagens é usada principalmente para análise de dados?",
+            answers: [
+              { text: "C#", correct: false },
+              { text: "Ruby", correct: false },
+              { text: "Python", correct: true },
+              { text: "PHP", correct: false }
+            ]
+          }
+        ];
+    
+        const questionElement = document.getElementById('question');
+        const answerButtons = document.getElementById('answer-buttons');
+        const nextButton = document.getElementById('next-btn');
+        const scoreElement = document.getElementById('score');
+    
+        let currentQuestionIndex = 0;
+        let score = 0;
+    
+        function startQuiz() {
+          currentQuestionIndex = 0;
+          score = 0;
+          nextButton.innerHTML = "Próxima";
+          scoreElement.innerHTML = "";
+          showQuestion();
+        }
+    
+        function showQuestion() {
+          resetState();
+          const currentQuestion = questions[currentQuestionIndex];
+          questionElement.innerText = currentQuestion.question;
+    
+          currentQuestion.answers.forEach(answer => {
+            const button = document.createElement("button");
+            button.innerText = answer.text;
+            button.classList.add("btn");
+            if (answer.correct) {
+              button.dataset.correct = answer.correct;
+            }
+            button.addEventListener("click", selectAnswer);
+            answerButtons.appendChild(button);
+          });
+        }
+    
+        function resetState() {
+          nextButton.style.display = "none";
+          while (answerButtons.firstChild) {
+            answerButtons.removeChild(answerButtons.firstChild);
+          }
+        }
+    
+        function selectAnswer(e) {
+          const selectedBtn = e.target;
+          const isCorrect = selectedBtn.dataset.correct === "true";
+    
+          if (isCorrect) {
+            selectedBtn.classList.add("correct");
+            score++;
+          } else {
+            selectedBtn.classList.add("wrong");
+          }
+    
+          Array.from(answerButtons.children).forEach(button => {
+            if (button.dataset.correct === "true") {
+              button.classList.add("correct");
+            }
+            button.disabled = true;
+          });
+    
+          nextButton.style.display = "block";
+        }
+    
+        function showScore() {
+          resetState();
+          questionElement.innerText = "Quiz finalizado!";
+          scoreElement.innerText = `Você acertou ${score} de ${questions.length} perguntas.`;
+          nextButton.innerText = "Jogar novamente";
+          nextButton.style.display = "block";
+        }
+    
+        function handleNextButton() {
+          currentQuestionIndex++;
+          if (currentQuestionIndex < questions.length) {
+            showQuestion();
+          } else {
+            showScore();
+          }
+        }
+    
+        nextButton.addEventListener("click", () => {
+          if (currentQuestionIndex < questions.length) {
+            handleNextButton();
+          } else {
+            startQuiz();
+          }
+        });
+    
+        startQuiz();
+      </script>
+    </div>
 </body>
 </html>
