@@ -5,85 +5,130 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Linha Do Tempo</title>
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/stylelinha.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Quicksand:wght@300..700&family=Roboto+Condensed:wght@600&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
     <header>
         <div class="logo">
-            <a href="#">MeuSite</a>
+            <a href="index.html">MeuSite</a>
         </div>
         <nav>
             <ul>
-                <div class="meu_horizontal">
-                    <li><a href="index.html">Home</a></li>
-                    <li></li><a href="linha.html">Linha do Tempo</a></li>
-                    <li></li><a href="curso.html">Cursos</a></li>
-                    <li></li><a href="comunidade.html">Comunidade</a></li>
-                    <li></li><a href="quiz.html">Quiz</a></li>
-                </div>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="linha.html">Linha do Tempo</a></li>
+                <li><a href="/app/curso.html">Cursos</a></li>
+                <li><a href="comunidade.html">Comunidade</a></li>
+                <li><a href="quiz.html">Quiz</a></li>
             </ul>
         </nav>
     </header>
-        <div class="conteudo_site">
-            <div class="imagens">
-                <h1>Historia Da Internet</h1>
-                <img class="teste_1" alt="teste_1" height="400" width="400" src="assets/images/internet.png" />
-            </div>
-            <div class="textos">
-                <p id="primeiro_paragrafo">
-                    A história da internet teve início com a Arpanet, uma rede de troca de informações que havia sido desenvolvida para conectar instalações de pesquisas e militares com o Pentágono, nos Estados Unidos, na década de 1960. O crescimento dessa rede permitiu que seu uso se estendesse para fins privados e comerciais.
+    <div class="apresentacao">
+        <div class="texto-sobre-imagem">HISTÓRIA DA<br>INTERNET</div>
+        <div class="desc">
+            Da Arpanet aos dias atuais, este material explora a evolução da internet, revelando como ela transformou a
+            comunicação, a informação e a sociedade.
+        </div>
+    </div>
+    <div class="imagens">
+        <div>
+            <img id="cabo-2" src="assets/images/internet_2.jpg" alt="cabo-2">
+            <h1>HISTÓRIA DA INTERNET</h1>
+            <p id="primeiro_paragrafo">
+                A história da internet teve início com a Arpanet, uma rede de troca de informações que havia sido
+                desenvolvida para conectar instalações de pesquisas e militares com o Pentágono, nos Estados Unidos,
+                na
+                década de 1960. O crescimento dessa rede permitiu que seu uso se estendesse para fins privados e
+                comerciais.
 
-	A internet chegou ao Brasil, em 1988, por meio de uma conexão entre um computador da Universidade Federal do Rio de Janeiro (UFRJ) e a rede da Universidade de Maryland, nos Estados Unidos, tornando-se pública e comercial entre 1994 e 1995. Atualmente, de acordo com a Pnad, cerca de 90% das residências brasileiras têm acesso à internet.
-                </p>
-                <h2>LINHA DO TEMPO</h2>
-                <p id="segundo_paragrafo">
-                  
-                </p>
+                A internet chegou ao Brasil, em 1988, por meio de uma conexão entre um computador da Universidade
+                Federal do Rio de Janeiro (UFRJ) e a rede da Universidade de Maryland, nos Estados Unidos,
+                tornando-se
+                pública e comercial entre 1994 e 1995. Atualmente, de acordo com a Pnad, cerca de 90% das
+                residências
+                brasileiras têm acesso à internet.
+            </p>
+        </div>
+    </div>
+    <div class="conteudo_site">
+        <div class="textos">
+            <h2>LINHA DO TEMPO</h2>
+        </div>
+    </div>   
+        <div class="timeline" id="caixa">
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>1969</h3>
+                    <p>A história da internet é recente. Ela surgiu nos Estados Unidos, durante a Guerra Fria, com a criação
+                        da
+                        Arpanet pela Darpa. </p>
+                </div>
+            </div>
+    
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>1973</h3>
+                    <p>Louis Pouzin desenvolveu a rede de troca de pacotes CYCLADES, que foi a primeira a responsabilizar os
+                        hospedeiros pelo transporte de dados.</p>
+                </div>
+            </div>
+    
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>1989</h3>
+                    <p>Criação da Rede Nacional de Ensino e Pesquisa (RNP).</p>
+                </div>
+            </div>
+    
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>1990</h3>
+                    <p>Evoluiu significativamente com o desenvolvimento de protocolos como o TCP/IP, nos anos 1970 e 1980, e
+                        a
+                        criação da WorldWide Web por Tim Berners-Lee, nos anos 1990.</p>
+                </div>
+            </div>
+    
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>2000</h3>
+                    <p>A década de 2000 viu um crescimento explosivo na adoção da internet, impulsionado pela banda larga,
+                        a evolução dos motores de busca, como o Google, e o surgimento das redes sociais, como o Facebook e
+                        o Twitter. </p>
+                </div>
             </div>
         </div>
-
-        <div class="container">
-            <div class="linha"></div>
-            <div class="evento" id="evento-1969">
-                <div class="marcador"></div>
-                <div class="conteudo" id="conteudo_direita">
-                    <h2 onclick="toggleContent('content-1969')">1969</h2>
-                    <p id="content-1969" class="hidden">A história da internet é recente. Ela surgiu nos Estados Unidos, durante a Guerra Fria, com a criação da Arpanet pela Darpa. </p>
-                </div>
-            </div>
-            <div class="evento" id="evento-1973">
-                <div class="marcador"></div>
-                <div class="conteudo">
-                    <h2 onclick="toggleContent('content-1973')">1973</h2>
-                    <p id="content-1973" class="hidden">Louis Pouzin desenvolveu a rede de troca de pacotes CYCLADES, que foi a primeira a responsabilizar os hospedeiros pelo transporte de dados.</p>
-                </div>
-            </div>
-            <div class="evento" id="evento-1989">
-                <div class="marcador"></div>
-                <div class="conteudo" id="conteudo_direita">
-                    <h2 onclick="toggleContent('content-1989')">1989</h2>
-                    <p id="content-1989" class="hidden">Criação da Rede Nacional de Ensino e Pesquisa (RNP).</p>
-                </div>
-            </div>
-            <div class="evento" id="evento-1990">
-                <div class="marcador"></div>
-                <div class="conteudo">
-                    <h2 onclick="toggleContent('content-1990')">1990</h2>
-                    <p id="content-1990" class="hidden">Evoluiu significativamente com o desenvolvimento de protocolos como o TCP/IP, nos anos 1970 e 1980, e a criação da World Wide Web por Tim Berners-Lee, nos anos 1990.</p>
-                </div>
-            </div>
-            <div class="evento" id="evento-2000">
-                <div class="marcador"></div>
-                <div class="conteudo" id="conteudo_direita">
-                    <h2 onclick="toggleContent('content-2000')">2000</h2>
-                    <p id="content-2000" class="hidden">
-                      A década de 2000 viu um crescimento explosivo na adoção da internet, impulsionado pela banda larga, a evolução dos motores de busca, como o Google, e o surgimento das redes sociais, como o Facebook e o Twitter. </p>
-                </div>
-            </div>
-        
+    <div class="conteudo_site">
+        <div class="textos-1">
+            <h2>IOT</h2>
+            <p>
+                A Internet das Coisas (IoT) é um conceito que conecta objetos físicos à internet, permitindo que eles coletem, troquem e processem dados. Esses objetos podem ser eletrodomésticos, veículos, sensores industriais, relógios inteligentes, entre outros. Por meio de sensores e dispositivos embarcados, os objetos IoT interagem com o ambiente e com outros sistemas.<br>                
+                Essa tecnologia permite automatizar tarefas, otimizar processos e oferecer informações em tempo real. As aplicações vão desde casas inteligentes até cidades conectadas e fábricas automatizadas. O IoT melhora a eficiência energética, segurança, controle e conveniência no cotidiano. Na indústria, permite manutenção preditiva e monitoramento remoto. Na saúde, viabiliza o acompanhamento de pacientes a distância.<br>                
+                Apesar dos benefícios, há desafios de segurança, privacidade e compatibilidade. O crescimento do 5G e da inteligência artificial fortalece o potencial da IoT. Assim, ela se torna peça-chave na transformação digital global.
+            </p>
         </div>
+    </div>
+
+    <div class="topico-2">
+    </div>
+
     <script src="assets/js/script.js"></script>
 </body>
 
-</html> 
+</html>

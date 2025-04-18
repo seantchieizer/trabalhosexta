@@ -1,0 +1,334 @@
+
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos gerais do corpo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Estilos do cabeçalho */
+header {
+    background-color: #000000;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header .logo a {
+    color: #fff;
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav ul {
+    
+    list-style:none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    position: relative;
+    z-index: 10;
+    color: #fff;
+    text-decoration: solid;
+    font-size: 18px;
+    padding: 5px 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #d1d0d0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/*CSS da Linha do tempo*/
+
+.conteudo_site {
+    width: 100%;
+}
+.textos h2{
+    text-align: justify;
+    font-size: 90px;
+    color: hsl(195, 69%, 46%);
+    font-family: "Oswald", sans-serif;
+    margin: 0% 0% 0% 4.5%;
+    text-shadow: 2px 2px 2px rgba(152, 146, 146, 0.397);
+    font-weight: 500;
+    line-height: 0.7;
+}
+
+.textos-1 h2 {
+    text-align: justify;
+    font-size: 90px;
+    color: hsl(43.85deg 13.83% 36.86%);
+    font-family: "Oswald", sans-serif;
+    margin: -30px 0% 0% 52%;
+    text-shadow: 2px 2px 2px rgba(152, 146, 146, 0.397);
+    font-weight: 500;
+    line-height: 0;
+}
+
+.textos-1 p {
+    text-align: justify;
+    font-size: 25px;
+    color: hsl(43.85deg 13.83% 36.86%);
+    font-family: "Oswald", sans-serif;
+    margin: 5% 4% 0% 53%;
+    text-shadow: 2px 2px 2px rgba(152, 146, 146, 0.397);
+    font-weight: 400;
+    line-height: 1;
+    height: auto;
+}   
+
+.imagens{
+    background: black;
+    width: 100%;
+    height: 650px;
+    background-image: url('/app/assets/images/internet.jpeg');
+}
+
+.imagens #cabo-2{
+    width: 50%;
+    height: 650px;
+}
+
+.imagens p{
+    position:absolute;
+    color: white; /* Cor do texto */
+    font-family: "Oswald", sans-serif;
+    height: auto;
+    top: 0%;
+    overflow: hidden;
+    font-weight: 50;
+    font-size: 25px;
+    display: flex;
+    margin: 0% 2% 0% 55%;
+    padding-top: 61%;
+    text-align: justify;
+
+}
+/* Testanto*/
+
+.imagens h1{
+    position:absolute;
+    color: white; /* Cor do texto */
+    font-family: "Oswald", sans-serif;
+    height: auto;
+    top: 0%;
+    overflow: hidden;
+    font-size: 55px;
+    display: flex;
+    margin: 0% 2% 0% 55%;
+    padding-top: 55%;
+}
+
+
+.imagem_globo{
+    width: 100%;
+    height: 75%;
+    display: flex;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.5);;
+
+}
+
+.texto-sobre-imagem {
+    position: absolute;
+    color: white; /* Cor do texto */
+    font-family: "Oswald", sans-serif;
+    height: 300px;
+    top: 30%;
+    overflow: hidden;
+    font-weight: 600;
+    font-size: 72px;
+    left: 4%;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  }
+
+  .apresentacao {
+    position: relative;
+    width: 100%;
+    height: 730px;  
+    background-image: url('/app/assets/images/imagem_globo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .desc {
+    margin-top: 16px;
+    width: 500px;
+    position: absolute;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    height: 100px;
+    top: 65%;
+    overflow: hidden;
+    font-weight: 500;
+    font-size: 20px;
+    left: 4%;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.7);
+  }
+
+
+/*TIMELINE*/
+  
+.timeline {
+        position: absolute;
+        width: 45%;
+        margin: 2% 0% 0% 4%;
+        font-family: Arial, sans-serif;
+        padding: 2px;
+  }
+
+  .timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    width: 4px;
+    height: 180%;
+    background: #25a0c9;
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin: 6% 6% 4% 0%;
+    padding-left: 50px;
+  }
+
+  
+  .timeline-dot {
+    position: absolute;
+    left: 12px;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    background: #25a0c9;
+    border-radius: 50%;
+  }
+
+  .timeline-dot:hover{
+    position: absolute;
+    left: 12px;
+    top: 0;
+    width: 16px;
+    height: 16px;
+    background: #51899b;
+    border-radius: 50%;
+
+  }
+  
+  .timeline-content {
+    background: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .timeline-content h3 {
+    margin: 0 0 10px;
+    color: #333;
+  }
+  
+  .timeline-content p {
+    margin: 0;
+    color: #666;
+  }
+  .anexos-1 {
+    width: 50%;
+    height: auto;
+    margin: -15% 0% 0% 26%;
+}
+.anexos-1 h1 {
+    text-align: justify;
+    font-size: 90px;
+    color: rgb(107 100 81);
+    font-family: "Oswald", sans-serif;
+    margin: 8% 0% 0% 50%;
+    text-shadow: 2px 2px 2px rgba(152, 146, 146, 0.397);
+}
+
+.anexos-1 p {
+    text-align:justify;
+    height: 250px;
+    font-size: 20px;
+    color: rgb(107 100 81);
+    font-family: "Oswald", sans-serif;
+    margin: 0% 0% 0% 55%;
+    text-shadow: 2px 2px 2px rgba(152, 146, 146, 0.397);
+}
+
+
+
+#caixa {
+    width: 45%;
+    height: 400px;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 2px;
+  }
+  
+  /* Esconde as barras de rolagem visuais */
+#caixa::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Para Firefox */
+#caixa {
+    scrollbar-width:thin;
+  }
+
+
+
+.topico-2 {
+    /*background-image: url('/app/assets/images/topico-3.jpg');*/
+    background-color: #272626;
+    width: 100%;
+    height: 200px;
+    margin: 1% 0% 0% 0%;
+}
+
+.texto-topico-2 h1{
+    color: #ffffff;
+    text-align:justify;
+    font-size: 20px;
+    font-family: "Oswald", sans-serif;
+    margin: 0% 0% 0% 0%;
+    text-shadow: 2px 2px 2px rgba(152, 146, 146, 0.397);
+
+}
+.top-2 p{
+    background-color: #ffffffc7;
+    color: #4b4848;
+    width: 50%;
+    height: auto;
+    font-size: 30px;
+    margin: -20% 0% 0% 49%;
+    padding: 1% 1% 1% 1%;
+    border-radius: 1%;
+}
+
+.top-2 img{
+    width: 30%;
+    height: auto;
+    margin: 3% 0% -3% 4%;
+}
