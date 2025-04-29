@@ -1,0 +1,98 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #000;
+}
+
+.body-page {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.body-quiz {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    z-index: 0;
+}
+
+.body-quiz::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('/trabalhosexta/app/assets/images/topico-3.jpg') center center / cover no-repeat;
+    filter: blur(5px);
+    opacity: 0.8;
+    z-index: -1;
+}
+
+.quiz-container {
+    background-color: rgba(28, 28, 35, 0.95);
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    text-align: center;
+    z-index: 1;
+}
+
+.question {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.answers {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.btn {
+    background-color: #303138;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    color: #fff;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #0e321f;
+}
+
+.btn.correct {
+    background-color: #50fa7b;
+}
+
+.btn.wrong {
+    background-color: #ff5555;
+}
+
+#next-btn {
+    margin-top: 20px;
+    display: none;
+}
+
+.score {
+    font-size: 1.2em;
+    margin-top: 20px;
+}

@@ -3,12 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HOME</title>
+  <title>Home - NetLine</title>
   <link rel="stylesheet" href="./assets/css/stylehome.css">
   <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
   <div class="indicator"></div>
+  
   <nav>
     <div>
       <div class="svg-container">
@@ -19,54 +20,45 @@
       </div>
     </div>
     <div>
-      
-      <div class="svg-container">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor">
-          <path fill-rule="evenodd" d="M7.5 6a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM3.751 20.105a8.25 8.25 0 0116.498 0 .75.75 0 01-.437.695A18.683 18.683 0 0112 22.5c-2.786 0-5.433-.608-7.812-1.7a.75.75 0 01-.437-.695z" clip-rule="evenodd"/>
-        </svg>
-      </div>
     </div>
   </nav>
 
   <div id="demo"></div>
 
+  <!-- Seções de Detalhes -->
   <div class="details" id="details-even">
-    <div class="place-box">
-      <div class="text">MODULO 01</div>
-    </div>
-    <div class="title-box-1"><div class="title-1">HISTÓRIA DA</div></div>
-    <div class="title-box-2"><div class="title-2">INTERNET</div></div>
-    <div class="desc">Da Arpanet aos dias atuais, este material explora a evolução da internet, revelando como ela transformou a comunicação, a informação e a sociedade.</div>
+    <div class="place-box"><div class="text"></div></div>
+    <div class="title-box-1"><div class="title-1">BEM VINDOS</div></div>
+    <div class="title-box-2"><div class="title-2">AO NOSSO SITE</div></div>
+    <div class="desc">Venha aprender sobre a história da internet, se divertir e ter mais conhecimento.</div>
     <div class="cta">
-
-      <button class="discover"><i class='bx bx-search-alt'></i> Teste 6</button>
+      <a href="sobre.html" class="discover-button">Saiba Mais</a>
     </div>
   </div>
 
   <div class="details" id="details-odd">
-    <div class="place-box">
-      <div class="text">Teste 7</div>
-    </div>
-    <div class="title-box-1"><div class="title-1">Teste 8</div></div>
-    <div class="title-box-2"><div class="title-2">Teste 9</div></div>
-    <div class="desc">Texto de teste 10 para simular descrição de conteúdo.</div>
+    <div class="place-box"><div class="text"></div></div>
+    <div class="title-box-1"><div class="title-1">Explorar</div></div>
+    <div class="title-box-2"><div class="title-2">Mais Conteúdos</div></div>
+    <div class="desc">Explore nossos recursos adicionais para ampliar seu conhecimento.</div>
     <div class="cta">
-
-      <button class="discover"><i class='bx bx-search-alt'></i> Teste 11</button>
+      <a href="conteudos.html" class="discover-button"><i class='bx bx-search-alt'></i> Descobrir</a>
     </div>
   </div>
 
+  <!-- Paginação -->
   <div class="pagination" id="pagination">
     <div class="arrow arrow-left">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5"/>
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
       </svg>
     </div>
     <div class="arrow arrow-right">
       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5"/>
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
       </svg>
     </div>
+
     <div class="progress-sub-container">
       <div class="progress-sub-background">
         <div class="progress-sub-foreground"></div>
@@ -77,7 +69,7 @@
 
   <div class="cover"></div>
 
-  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js'></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
   <script src="./assets/js/scripthome.js"></script>
 </body>
 </html>

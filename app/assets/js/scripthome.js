@@ -1,46 +1,47 @@
 /*js da home */
 const data = [
     {
-        place: 'MODULO 01',
+        place: '',
+        title: 'AVANÇANDO SEU',
+        title2: 'CONHECIMENTO',
+        description: 'DICAS DE SITES E CANAIS PARA AMPLIAR SEU CONHECIMENTO.',
+        image: 'https://4kwallpapers.com/images/wallpapers/hello-world-pixel-1920x1080-15168.png'
+    },
+    {
+        place: '',
         title: 'HISTÓRIA DA ',
         title2: 'INTERNET',
         description: 'DA ARPANET AOS DIAS ATUAIS, ESTE MATERIAL EXPLORA A EVOLUÇÃO DA INTERNET, REVELANDO COMO ELA TRANSFORMOU A COMUNICAÇÃO, A INFORMAÇÃO E A SOCIEDADE.',
         image: 'https://wallpapercrafter.com/th8001/500964-blue-world-social-network-line-technology-graphics.jpg'
     },
     {
-        place: 'MODULO 02',
+        place: '',
         title: 'CURSOS',
         title2: '& MATERIAIS',
         description: 'APRENDENDO SOBRE LINGUAGENS DE PROGRAMAÇÃO & APLICAÇÕES DA INTERNET.',
         image: 'https://images.pexels.com/photos/877971/pexels-photo-877971.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'
     },
     {
-        place: 'MODULO 03',
+        place: '',
         title: 'COMUNIDADE',
         title2: '& VAGAS',
         description: 'FAÇA AMIGOS E COMPARTILHE OPORTUNIDADES.',
         image: 'https://img.freepik.com/fotos-gratis/postura-plana-da-estacao-de-trabalho-com-espaco-de-copia-e-laptop_23-2148430879.jpg'
     },
     {
-        place: 'MODULO 04',
+        place: '',
         title: 'QUIZ',
         description: 'TREINANDO & AMPLIANDO SEU CONHECIMENTO.',
         image: 'https://img.freepik.com/fotos-premium/cool-lofi-girl-estudando-em-sua-mesa-chuvosa-ou-nublada-do-lado-de-fora-lindo-papel-de-parede-frio-e-atmosferico-4k-streaming-de-fundo-estilo-lofi-hiphop-estilo-anime-manga-generative-ai_117038-5583.jpg'
     },
     {
-        place: 'MODULO 05',
+        place: '',
         title: 'CONHECENDO O',
         title2: 'TIME',
         description: 'CONHECENDO O TIME & SUAS FUNÇÕES DENTRO DO PROJETO.',
         image: 'https://www.apple.com/tv-pr/shows-and-films/s/severance/images/season-02/unit-photos/episode-07/photo-020713/Severance_Photo_020713.jpg.photo_modal_show_home_large.jpg'
     },
-    {
-        place: 'MODULO 06',
-        title: 'AVANÇANDO SEU',
-        title2: 'CONHECIMENTO',
-        description: 'DICAS DE SITES E CANAIS PARA AMPLIAR SEU CONHECIMENTO.',
-        image: 'https://4kwallpapers.com/images/wallpapers/hello-world-pixel-1920x1080-15168.png'
-    },
+    
   ];
   
   const _ = (id) => document.getElementById(id);
