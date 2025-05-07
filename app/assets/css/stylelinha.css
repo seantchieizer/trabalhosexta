@@ -3,12 +3,13 @@
 .conteudo_site {
   width: 100%;
 }
+
 .textos h2{
   text-align: justify;
   font-size: 90px;
   color: hsl(195, 69%, 46%);
   font-family: "Oswald", sans-serif;
-  margin: 0% 0% 0% 4.5%;
+  margin: 4% 0% 0% 4.5%;
   text-shadow: 2px 2px 2px rgba(152, 146, 146, 0.397);
   font-weight: 500;
   line-height: 0.7;
@@ -40,13 +41,13 @@
 .imagens{
   background: black;
   width: 100%;
-  height: 650px;
+  height: 550px;
   background-image: url('/app/assets/images/internet.jpeg');
 }
 
 .imagens #cabo-2{
   width: 50%;
-  height: 650px;
+  height: 550px;
 }
 
 .imagens p{
@@ -54,7 +55,7 @@
   color: white; /* Cor do texto */
   font-family: "Oswald", sans-serif;
   height: auto;
-  top: 0%;
+  top: -70%;
   overflow: hidden;
   font-weight: 50;
   font-size: 25px;
@@ -71,7 +72,7 @@
   color: white; /* Cor do texto */
   font-family: "Oswald", sans-serif;
   height: auto;
-  top: 0%;
+  top: -75%;
   overflow: hidden;
   font-size: 55px;
   display: flex;
@@ -93,7 +94,6 @@
   color: white; /* Cor do texto */
   font-family: "Oswald", sans-serif;
   height: 300px;
-  top: 30%;
   overflow: hidden;
   font-weight: 600;
   font-size: 72px;
@@ -102,9 +102,10 @@
 }
 
 .apresentacao {
+  background-color: #000000;
   position: relative;
   width: 100%;
-  height: 730px;  
+  height: 200px;  
   background-image: url("/trabalhosexta/app/assets/images/imagem_globo.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -118,7 +119,7 @@
   color: white;
   font-family: "Oswald", sans-serif;
   height: 100px;
-  top: 65%;
+  top: 40%;
   overflow: hidden;
   font-weight: 500;
   font-size: 20px;
@@ -241,7 +242,7 @@
   /*background-image: url('/app/assets/images/topico-3.jpg');*/
   background-color: #272626;
   width: 100%;
-  height: 200px;
+  height: 100px;
   margin: 1% 0% 0% 0%;
 }
 
