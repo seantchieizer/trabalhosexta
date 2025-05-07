@@ -50,3 +50,16 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #444;
 }
+<box-icon 
+type = "regular|solid|logo"
+name="adjust|alarms|etc...."
+color="blue|red|etc..."
+size="xs|sm|md|lg|cssSize"
+rotate="90|180|270"
+flip="horizontal|vertical"
+border="square|circle"
+animation="spin|tada|etc..."
+animation="spin|tada|etc..."
+pull = "left|right"
+></box-icon>
+Usage as a 

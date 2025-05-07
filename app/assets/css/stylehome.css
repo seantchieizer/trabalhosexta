@@ -3,8 +3,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Oswald:wght@500&display=swap");
 body {
   margin: 0;
-  background-color: #1a1a1a;
-  color: #FFFFFFDD;
+  background-color: #000000;
+  color: #ffffffdd;
   position: relative;
   overflow: hidden;
   font-family: "Inter", sans-serif;
@@ -30,7 +30,7 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  color: #FFFFFFDD;
+  color: #ffffffdd;
   padding-left: 16px;
 }
 
@@ -61,8 +61,8 @@ body {
 .details {
   z-index: 22;
   position: absolute;
-  top: 240px;
-  left: 60px;
+  top: 100px;
+  left: 25px;
 }
 .details .place-box {
   height: 46px;
@@ -91,7 +91,6 @@ body {
 .details .title-box-1,
 .details .title-box-2 {
   margin-top: 2px;
-  height: 100px;
   overflow: hidden;
 }
 .details > .desc {
@@ -139,7 +138,10 @@ body {
   margin-left: 16px;
   text-transform: uppercase;
 }
+.discover-button{
+  color: #ffffff;
 
+}
 nav {
   position: fixed;
   left: 0;

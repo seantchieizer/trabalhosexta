@@ -10,12 +10,12 @@ body {
     position: relative;
     background: url('/trabalhosexta/app/assets/images/teste.webp') no-repeat center/cover;
     color: #fff;
-    padding: 150px 20px;
+    padding: 10px 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    min-height: 300px;
+    min-height: 100px;
     overflow: hidden;
 }
 
