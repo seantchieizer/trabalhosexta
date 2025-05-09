@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home - NetLine</title>
+  <link rel="stylesheet" href="./assets/css/stylehome.css">
+  <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+  <div class="indicator"></div>
+  
+  <nav>
+    <div>
+      <div class="svg-container">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"/>
+        </svg>
+      </div>
+    </div>
+    <div>
+    </div>
+  </nav>
+
+  <div id="demo"></div>
+
+  <!-- Seções de Detalhes -->
+     <!-- Link para linha do tempo -->
+
+  <div class="details" id="details-even">
+    <div class="place-box"><div class="text"></div></div>
+    <div class="title-box-1"><div class="title-1">BEM VINDOS</div></div>
+    <div class="title-box-2"><div class="title-2">AO NOSSO SITE</div></div>
+    <div class="desc">Venha aprender sobre a história da internet, se divertir e ter mais conhecimento.</div>
+    <div class="cta">
+      <a href="/app/linha.html" class="discover-button"><i class='bx bx-search-alt'></i>Saiba Mais</a>
+    </div>
+  </div>
+  
+  <!-- Link para Cursos -->
+
+  <div class="details" id="details-odd">
+    <div class="place-box"><div class="text"></div></div>
+    <div class="title-box-1"><div class="title-1">Explorar</div></div>
+    <div class="title-box-2"><div class="title-2">Mais Conteúdos</div></div>
+    <div class="desc">Explore nossos recursos adicionais para ampliar seu conhecimento.</div>
+    <div class="cta">
+      <a href="/app/curso.html" class="discover-button"><i class='bx bx-search-alt'></i> Descobrir</a>
+    </div>  
+  </div>
+
+  <!-- Paginação -->
+  <div class="pagination" id="pagination">
+    <div class="arrow arrow-left">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" />
+      </svg>
+    </div>
+    <div class="arrow arrow-right">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+      </svg>
+    </div>
+
+    <div class="progress-sub-container">
+      <div class="progress-sub-background">
+        <div class="progress-sub-foreground"></div>
+      </div>
+    </div>
+    <div class="slide-numbers" id="slide-numbers"></div>
+  </div>
+
+  <div class="cover"></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="./assets/js/scripthome.js"></script>
+</body>
+</html>
